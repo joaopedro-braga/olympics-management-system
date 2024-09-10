@@ -48,6 +48,61 @@ This project aims to develop a comprehensive management system for the Olympic G
 
 # Documentation
 ### User Stories
+#### US01 - Create a Competition
+```
+As an event organizer,
+I want to create a new competition,
+so that athletes can register and participate.
+```
+
+#### US02 - Register an Athlete
+```
+As an athlete,
+I want to register for a specific competition and represent my country,
+so that I can compete.
+```
+
+#### US03 - Prevent Duplicate Athlete Registration
+```
+As a system,
+I should prevent an athlete from registering for the same modality representing different countries,
+to ensure fair competition.
+```
+
+#### US04 - Allocate Competition Venue
+```
+As an event organizer,
+I want to allocate a venue to a competition considering its date and time,
+so that there are no scheduling conflicts.
+```
+
+#### US05 - Prevent Venue Double Booking
+```
+As a system,
+I should prevent booking the same venue for two competitions at the same time,
+to avoid conflicts.
+```
+
+#### US06 - Record Competition Results
+```
+As a competition official,
+I want to record the results of a competition, including the top three athletes,
+so that the system can generate reports and rankings.
+```
+
+#### US07 - Generate Medal Tally Report
+```
+As an event organizer,
+I want to generate a report that shows the medal tally for each country,
+so that I can track the overall performance of participating nations.
+```
+
+#### US08 - Manage Competition Details
+```
+As an event organizer,
+I want to be able to edit competition details (date, time, venue, registered athletes),
+so that I can keep the information up-to-date and manage the competition effectively.
+```
 
 
 ## Use Case Diagram
