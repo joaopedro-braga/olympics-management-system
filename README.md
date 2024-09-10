@@ -40,7 +40,10 @@ This project aims to develop a comprehensive management system for the Olympic G
     * Displays the number of gold, silver, and bronze medals won by each country.
   
 ### Technologies Utilized
-
+* **Use Case Diagram:** Astah
+* **Class and Package Diagram:** Figma
+* **Component Diagram:** Figma
+* **Deployment Diagram:** Figma 
 
 
 # Documentation
