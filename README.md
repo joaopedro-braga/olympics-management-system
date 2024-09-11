@@ -10,9 +10,9 @@
  <a href="#Documentation"> Documentation </a>
 </p>
 
-# Ahtlos
+# Athlos
 
-Ahtlos is a system developed to manage the different aspects of the Olympic Games, such as competitions, athlete registrations, venue allocation, result control, and medal reports. 
+Athlos is a system developed to manage the different aspects of the Olympic Games, such as competitions, athlete registrations, venue allocation, result control, and medal reports. 
 
 # Group Members
 * [Gabriel Ramos Ferreira](https://github.com/gramos22)
@@ -40,10 +40,10 @@ This project aims to develop a comprehensive management system for the Olympic G
     * Displays the number of gold, silver, and bronze medals won by each country.
   
 ### Technologies Utilized
-* **Use Case Diagram:** Astah
+* **Use Case Diagram:** Figma
 * **Class and Package Diagram:** Figma
-* **Component Diagram:** Figma
-* **Deployment Diagram:** Figma 
+* **Component Diagram:** 
+* **Deployment Diagram:** 
 
 
 # Documentation
@@ -108,10 +108,17 @@ so that I can keep the information up-to-date and manage the competition effecti
 ## Use Case Diagram
 
 ![Use Case Diagram](docs/images/UseCaseDiagram.png)
+[Access Figma](https://www.figma.com/board/ZspA2mT79CjrHIdlJ2SnQ2/Use-Case-Diagram---Asthlos?t=VP0BPVo9Vw2czaf4-0)
 
-## Class and Package Diagram
+## Class Diagram
 
-![Class and Package Diagram](docs/images/ClassPackageDiagram.png)
+![Class Diagram](docs/images/ClassDiagram.png)
+[Access Figma](https://www.figma.com/board/whIVO401DCNuozs4Zx10HS/Class-and-Package-Diagram---Athlos?node-id=0-1&node-type=canvas&t=VP0BPVo9Vw2czaf4-0)
+
+## Package Diagram
+
+![Package Diagram](docs/images/PackageDiagram.png)
+[Access Figma](https://www.figma.com/board/whIVO401DCNuozs4Zx10HS/Class-and-Package-Diagram---Athlos?node-id=0-1&node-type=canvas&t=VP0BPVo9Vw2czaf4-0)
 
 ## Component Diagram
 
