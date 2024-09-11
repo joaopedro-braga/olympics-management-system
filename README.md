@@ -107,18 +107,18 @@ so that I can keep the information up-to-date and manage the competition effecti
 
 ## Use Case Diagram
 
-![Use Case Diagram](docs/image/UseCaseDiagram.png)
+![Use Case Diagram](docs/images/UseCaseDiagram.png)
 
 ## Class and Package Diagram
 
-![Class and Package Diagram](docs/image/ClassPackageDiagram.png)
+![Class and Package Diagram](docs/images/ClassPackageDiagram.png)
 
 ## Component Diagram
 
-![Component Diagram](docs/image/ComponentDiagram.png)
+![Component Diagram](docs/images/ComponentDiagram.png)
 
 ## Deployment Diagram
 
-![Deployment Diagram](docs/image/DeploymentDiagram.png)
+![Deployment Diagram](docs/images/DeploymentDiagram.png)
 
 
