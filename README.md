@@ -123,9 +123,11 @@ so that I can keep the information up-to-date and manage the competition effecti
 ## Component Diagram
 
 ![Component Diagram](docs/images/ComponentDiagram.png)
+[Access PlantUML Code](https://github.com/joaopedro-braga/olympics-management-system/blob/main/docs/designs/ComponentDiagram.puml)
 
 ## Deployment Diagram
 
 ![Deployment Diagram](docs/images/DeploymentDiagram.png)
 
+[Access PlantUML Code](https://github.com/joaopedro-braga/olympics-management-system/blob/main/docs/designs/DeploymentDiagram.puml)
 
