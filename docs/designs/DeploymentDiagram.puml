@@ -1,0 +1,20 @@
+@startuml
+!include <C4/C4_Deployment>
+
+Deployment_Node(userDevice, "User Device", "Web Browser")
+Deployment_Node(frontendServer, "Frontend Server", "Nginx", "Handles static file serving and reverse proxy") {
+  Container(frontendContainer, "Frontend", "React", "Provides the user interface") 
+}
+Deployment_Node(backendServer, "Backend Server", "Linux, Docker", "Runs the backend application") {
+  Container(backendContainer, "Backend", "Spring Boot", "Provides REST APIs")
+}
+Deployment_Node(databaseServer, "Database Server", "PostgreSQL", "Stores all data for the system") {
+  ContainerDb(databaseContainer, "Database", "PostgreSQL", "Stores data") 
+}
+
+Rel(userDevice, frontendServer, "Accesses", "HTTPS")
+Rel(frontendServer, backendServer, "Forwards requests", "HTTPS")
+Rel(backendServer, databaseServer, "Reads/Writes data", "JDBC") 
+
+SHOW_LEGEND()
+@enduml

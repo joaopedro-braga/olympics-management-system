@@ -42,8 +42,8 @@ This project aims to develop a comprehensive management system for the Olympic G
 ### Technologies Utilized
 * **Use Case Diagram:** Figma
 * **Class and Package Diagram:** Figma
-* **Component Diagram:** 
-* **Deployment Diagram:** 
+* **Component Diagram:** PlantUML
+* **Deployment Diagram:** PlantUML
 
 
 # Documentation

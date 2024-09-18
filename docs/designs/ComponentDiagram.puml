@@ -1,0 +1,42 @@
+@startuml
+!include <C4/C4_Component>
+
+LAYOUT_WITH_LEGEND()
+LAYOUT_LEFT_RIGHT()
+
+Container(webApp, "Athlete Portal", "React.JS", "Provides athletes with functionalities to register for events, view schedules, and manage their profile.")
+Container(backend, "API Application", "Spring Boot", "Provides REST APIs for managing olympic games data and logic. ")
+
+Container_Boundary(backend, "API Application") {
+    Component(venueController, "Venue Allocation Controller", "Spring MVC REST Controller", "Handles venue allocation for competitions.")
+    Component(registrationController, "Athlete Registration Controller", "Spring MVC REST Controller", "Handles athlete registration for competitions.")
+    Component(scheduleController, "Event Schedule Controller", "Spring MVC REST Controller", "Allows athletes to view event schedules.")
+    Component(profileController, "Athlete Profile Controller", "Spring MVC REST Controller", "Manages athlete profile information.") 
+
+    Component(athleteRegistrationService, "Athlete Registration Service", "Spring Bean", "Manages athlete registration logic and business rules.")
+    Component(eventSchedulingService, "Event Scheduling Service", "Spring Bean", "Manages event scheduling logic and business rules.")
+    Component(venueAllocationService, "Venue Allocation Service", "Spring Bean", "Manages venue allocation and prevents scheduling conflicts.")
+
+    Component(securityComponent, "Security Component", "Spring Bean", "Provides functionality related to authentication, authorization, signing in, changing passwords, etc.")
+}
+
+ContainerDb(database, "Database", "PostgreSQL", "Stores all data for the Olympics Management System: user registration information, athletes, competitions, results, venues, etc.")
+
+Rel(webApp, registrationController, "Makes API calls to \n (JSON / HTTPS)")
+Rel(webApp, scheduleController, "Makes API calls to \n (JSON / HTTPS)")
+Rel(webApp, profileController, "Makes API calls to \n (JSON / HTTPS)")
+Rel(webApp, venueController, "Makes API calls to \n (JSON / HTTPS)")
+
+Rel(venueController, venueAllocationService, "Uses")
+Rel(registrationController, athleteRegistrationService, "Uses")
+Rel(scheduleController, eventSchedulingService, "Uses")
+Rel(profileController, athleteRegistrationService, "Uses")
+Rel(athleteRegistrationService, securityComponent, "Uses")
+
+Rel(eventSchedulingService, database, "Reads/Writes")
+Rel(venueAllocationService, database, "Reads/Writes")
+Rel(athleteRegistrationService, database, "Reads/Writes")
+Rel(securityComponent, database, "Reads/Writes")
+
+SHOW_LEGEND()
+@enduml
