@@ -12,7 +12,7 @@
 
 # Athlos
 
-Athlos is a system developed to manage the different aspects of the Olympic Games, such as competitions, athlete registrations, venue allocation, result control, and medal reports. 
+Athlos is a system developed to manage the different aspects of the Olympic Games, such as competitions, athlete registrations, venue allocation, result control, and medal reports.
 
 # Group Members
 * [Gabriel Ramos Ferreira](https://github.com/gramos22)
